@@ -17,7 +17,6 @@ Este proyecto implementa un sistema de ventas para una tienda utilizando Python 
 
 El proyecto sigue el patrón MVC con la siguiente estructura:
 
-\`\`\`
 tienda_app/ <br>
 │ <br>
 ├── models/  <br>
@@ -37,7 +36,7 @@ tienda_app/ <br>
 ├── main.py                 # Punto de entrada de la aplicación <br>
 ├── requirements.txt        # Dependencias del proyecto <br>
 └── tienda.db               # Archivo SQLite generado automáticamente <br>
-\`\`\`
+
 
 ---
 
