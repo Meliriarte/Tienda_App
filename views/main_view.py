@@ -34,6 +34,13 @@ class MainView(ctk.CTk):
         self.nav_frame = ctk.CTkFrame(self.container)
         self.nav_frame.pack(fill="x", padx=20, pady=10)
         
+        # Configurar columnas para centrar los botones
+        self.nav_frame.columnconfigure(0, weight=1)
+        self.nav_frame.columnconfigure(1, weight=1)
+        self.nav_frame.columnconfigure(2, weight=1)
+        self.nav_frame.columnconfigure(3, weight=1)
+        self.nav_frame.columnconfigure(4, weight=1)
+        
         # Botones para las diferentes funcionalidades
         self.btn_inicio = ctk.CTkButton(
             self.nav_frame, 
@@ -138,7 +145,7 @@ class MainView(ctk.CTk):
         
         info_text = (
             "Este sistema le permite gestionar productos, clientes y ventas de su tienda.\n\n"
-            "Utilice los botones de navegación para acceder a las diferentes funcionalidades:\n"
+            "Utilice los botones de navegación para acceder a las diferentes funcionalidades\n"
         )
         
         info_label = ctk.CTkLabel(
@@ -149,40 +156,6 @@ class MainView(ctk.CTk):
             wraplength=600
         )
         info_label.pack(pady=20)
-        
-        # Frame para los botones de acceso rápido
-        quick_access_frame = ctk.CTkFrame(self.vista_inicio)
-        quick_access_frame.pack(pady=30)
-        
-        # Botones de acceso rápido
-        btn_quick_producto = ctk.CTkButton(
-            quick_access_frame,
-            text="Nuevo Producto",
-            command=self.mostrar_productos,
-            width=180,
-            height=40
-        )
-        btn_quick_producto.grid(row=0, column=0, padx=20, pady=20)
-        
-        btn_quick_cliente = ctk.CTkButton(
-            quick_access_frame,
-            text="Nuevo Cliente",
-            command=self.mostrar_clientes,
-            width=180,
-            height=40
-        )
-        btn_quick_cliente.grid(row=0, column=1, padx=20, pady=20)
-        
-        btn_quick_venta = ctk.CTkButton(
-            quick_access_frame,
-            text="Nueva Venta",
-            command=self.mostrar_ventas,
-            width=180,
-            height=40
-        )
-        btn_quick_venta.grid(row=0, column=2, padx=20, pady=20)
-        
-        self.vista_actual = "inicio"
     
     def mostrar_productos(self):
         """Muestra la vista de productos"""
