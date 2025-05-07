@@ -17,27 +17,26 @@ Este proyecto implementa un sistema de ventas para una tienda utilizando Python 
 
 El proyecto sigue el patrón MVC con la siguiente estructura:
 
-\`\`\`
-tienda_app/
-│
-├── models/
-│   └── models.py           # Definición de la base de datos y modelos con Peewee
-│
-├── views/
-│   ├── main_view.py        # Ventana principal (CustomTkinter)
-│   ├── producto_view.py    # Formulario para agregar productos
-│   ├── cliente_view.py     # Formulario para agregar clientes
-│   └── venta_view.py       # Formulario para registrar ventas
-│
-├── controllers/
-│   ├── producto_controller.py  # Lógica para productos
-│   ├── cliente_controller.py   # Lógica para clientes
-│   └── venta_controller.py     # Lógica para ventas
-│
-├── main.py                 # Punto de entrada de la aplicación
-├── requirements.txt        # Dependencias del proyecto
-└── tienda.db               # Archivo SQLite generado automáticamente
-\`\`\`
+tienda_app/ <br>
+│ <br>
+├── models/  <br>
+│   └── models.py           # Definición de la base de datos y modelos con Peewee <br>
+│ <br>
+├── views/ <br>
+│   ├── main_view.py        # Ventana principal (CustomTkinter) <br>
+│   ├── producto_view.py    # Formulario para agregar productos <br>
+│   ├── cliente_view.py     # Formulario para agregar clientes <br>
+│   └── venta_view.py       # Formulario para registrar ventas <br>
+│ <br>
+├── controllers/ <br>
+│   ├── producto_controller.py  # Lógica para productos <br>
+│   ├── cliente_controller.py   # Lógica para clientes <br>
+│   └── venta_controller.py     # Lógica para ventas <br>
+│ <br>
+├── main.py                 # Punto de entrada de la aplicación <br>
+├── requirements.txt        # Dependencias del proyecto <br>
+└── tienda.db               # Archivo SQLite generado automáticamente <br>
+
 
 ---
 
